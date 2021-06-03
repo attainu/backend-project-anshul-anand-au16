@@ -55,6 +55,7 @@ exports.getBootcamps = asyncHandler(async (req, res, next)=>{
 
   // Pagination result
   const pagination = {};
+  
   if (endIndex < total) {
     pagination.next = {
       page: page + 1,
