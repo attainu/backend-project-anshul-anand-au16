@@ -20,4 +20,4 @@ router
   .put(updateCourse)
   .delete(deleteCourse);
 
-module.exports = router; 
+module.exports = router;  
