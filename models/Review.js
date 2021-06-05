@@ -59,14 +59,14 @@ ReviewSchema.statics.getAverageRating = async function(bootcampId) {
   }
 };
 
-// Call getAverageCost after save
-ReviewSchema.post('save', function() {
-  this.constructor.getAverageRating(this.bootcamp);
-});
+// // Call getAverageCost after save
+// ReviewSchema.post('save', function() {
+//   this.constructor.getAverageRating(this.bootcamp);
+// });
 
-// Call getAverageCost before remove
-ReviewSchema.pre('remove', function() {
-  this.constructor.getAverageRating(this.bootcamp);
-});
+// // Call getAverageCost before remove
+// ReviewSchema.pre('remove', function() {
+//   this.constructor.getAverageRating(this.bootcamp);
+// });
 
 module.exports = mongoose.model('Review', ReviewSchema);
