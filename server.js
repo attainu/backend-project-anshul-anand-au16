@@ -29,6 +29,10 @@ const reviews = require('./routes/reviews');
 
 const app = express();
 
+app.get('/', req, res){
+  res.json({msg: "server is running fine"});
+};
+
 // Body parser
 app.use(express.json());
 
