@@ -30,7 +30,7 @@ const reviews = require('./routes/reviews');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.json({msg: "server is running fine"});
+  res.json({msg: "Welcome to Bootcamper!!"});
 });
 
 // Body parser
